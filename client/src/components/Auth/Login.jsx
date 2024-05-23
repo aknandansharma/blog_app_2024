@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 const Login = () => {
     const [email, setEmail] = React.useState("")
@@ -57,13 +58,14 @@ const Login = () => {
         <div className="flex items-center justify-between">
           <button
             type="submit"
-            className="bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2 px-4 rounded-md"
+            className="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-md"
           >
             Login
           </button>
-          <a href="#" className="text-gray-500 font-medium">
+          <Link to="/register" className="bg-indigo-500 hover:bg-indigo-600 text-white font-medium py-2 px-4 rounded-md"
+>
             Register
-          </a>
+          </Link>
         </div>
       </form>
     </div>
