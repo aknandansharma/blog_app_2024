@@ -1,28 +1,15 @@
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Login from './components/Auth/Login';
-import Register from './components/Auth/Register';
-import UserProfile from './components/Profile/UserProfile';
-import Blogs from './components/Blogs/Blogs';
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import PublicRoutes from "./components/PublicRoutes/PublicRoutes";
 
 function App() {
-  return (
-    <>
-      <Navbar/>
-      <Blogs/>
-      <Blogs/>
-      <Blogs/>
-      <Blogs/>
-      <Blogs/>
-      <Blogs/>
-      <Blogs/>
-      <Blogs/>
-      <Blogs/>
-      <Blogs/>
-      <Blogs/>
-      <Blogs/>
-    </>
-  );
+    return (
+        <>
+            <BrowserRouter>
+              <PublicRoutes/>
+            </BrowserRouter>
+        </>
+    );
 }
 
 export default App;
