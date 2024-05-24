@@ -124,7 +124,7 @@ const Blogs = () => {
       {blogsData.map((blog) => (
         <div
           key={blog.id}
-          className="max-w-md mx-auto bg-white rounded-lg shadow-lg p-4 md:p-6 space-y-4 mt-10"
+          className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-4 md:p-6 space-y-4 mt-12"
         >
           <div className="flex items-center space-x-4">
             <img
